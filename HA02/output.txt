@@ -1,0 +1,27 @@
+Terminal 1:
+C:\Users\Namitha\Desktop\CN\HA02>input.py 3 30000 5 5000 3
+"msg1"
+ : 30056
+"msg2"
+ : 30156
+"msg3"
+ : 30256
+"msg1"
+ : 30056
+"msg2"
+ : 30156
+"msg3"
+ : 30256
+
+Terminal 2:
+C:\Users\Namitha\Downloads\nc111nt>echo "msg1" | nc -u localhost 30056
+^C
+C:\Users\Namitha\Downloads\nc111nt>echo "msg2" | nc -u localhost 30156
+^C
+C:\Users\Namitha\Downloads\nc111nt>echo "msg3" | nc -u localhost 30256
+^C
+C:\Users\Namitha\Downloads\nc111nt>echo "msg1" | nc -u localhost 30056
+^C
+C:\Users\Namitha\Downloads\nc111nt>echo "msg2" | nc -u localhost 30156
+^C
+C:\Users\Namitha\Downloads\nc111nt>echo "msg3" | nc -u localhost 30256

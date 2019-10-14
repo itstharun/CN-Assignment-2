@@ -1,0 +1,18 @@
+
+INPUT:
+      format: input.py <numberOfPorts> <baseValueOfPorts> <bufferSize in bytes> <UDP port of switching fabric> <transmitRate>
+      example: input.py 3 30000 5 5000 3
+
+WORKING: The program uses concepts of socket programming to implement a simple multiple input port connections
+           to obtain data. the program only accepts data from ports in a linear way and not random.
+
+Challenges Faced:  understanding the question.
+                  Understanding the router architecture.
+                   Understanding socket programming .
+                   
+references: Lecture slides
+https://stackoverflow.com/questions/10810249/python-socket-multiple-clients
+https://www.geeksforgeeks.org/socket-programming-multi-threading-python/
+
+Note/Apology :Incomplete assignment .The implementation of threads and select() calls were tried but wasnt succesfull.
+              so had to upload the most basic program.it was good learning time though our assignment doesnt reflect our efforts.our lack of prepartion is to be blamed.
